@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>KrexonTX - Web page</title>
+
+  <!-- Fonts: Inter + Inter Tight (for iOS-like numerals) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css"/>
+  <meta name="description" content="KrexonTX (Tomi Taskov) — Programmer from gaming to AI. Scripts, utilities, and clean websites." />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">KrexonTX</div>
+      <nav class="menu" aria-label="Primary">
+        <a class="active" href="#home" data-toggle="home">Home</a>
+        <a href="#about" data-toggle="about">About</a>
+        <a href="#works" data-toggle="works">Works</a>
+      </nav>
+      <span class="spacer"></span>
+    </div>
+    <div class="featured-strip" role="note" aria-label="Featured">
+      <div class="strip-inner">
+        <span class="dot">•</span>
+        <span>BUILT FOR SPEED</span>
+        <span class="dot">•</span>
+        <span>Clean builds</span>
+        <span class="dot">•</span>
+        <span>Practical tools</span>
+        <span class="dot">•</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- GRID (HOME) -->
+  <main id="home" class="wrap">
+    <section class="grid">
+      <!-- HERO -->
+      <article class="card hero">
+        <div class="hero-media">
+          <img src="assets/avatar.jpg" alt="Portrait of Tomi Taskov"/>
+        </div>
+        <div class="hero-copy">
+          <p class="overline">A PROGRAMMER</p>
+          <h1 class="hero-title">Tomi Taskov.</h1>
+          <p class="hero-sub">Programmer in many aspects — from gaming to AI.</p>
+          <p class="hero-loc">Located near Sofia, Bulgaria</p>
+        </div>
+        <div class="hero-actions" role="group" aria-label="Profiles">
+          <a class="icon-btn dark" href="https://github.com/KrexonTX" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="assets/github.png" alt="">
+          </a>
+          <a class="icon-btn dark" href="https://discord.com/users/531910780006957093" target="_blank" rel="noopener" aria-label="Discord">
+            <img src="assets/discord.png" alt="">
+          </a>
+          <a class="icon-btn dark" href="https://www.instagram.com/tomi_taskov9/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="assets/instagram.png" alt="">
+          </a>
+        </div>
+      </article>
+
+      <!-- CREDENTIALS -->
+      <article class="card cred">
+        <p class="overline">MORE ABOUT ME</p>
+        <h3 class="card-title">Credentials</h3>
+        <ul class="bullets">
+          <li>Programmer with 7 years of hands‑on scripting and tooling.</li>
+          <li>Python and Lua for automation, utilities, and game servers.</li>
+          <li>HTML, CSS, JS for clean, fast, responsive front‑ends.</li>
+          <li>Focus: performance, reliability, and smooth UX.</li>
+        </ul>
+      </article>
+
+      <!-- SPECIALIZATION (icons added in HTML, under-glass styling in CSS) -->
+      <article class="card services">
+        <p class="overline">SPECIALIZATION</p>
+        <h3 class="card-title">Project Subjects</h3>
+        <ul class="icons">
+          <li>
+            <img class="bg-icon" src="assets/game.png" alt="" aria-hidden="true">
+            <span class="item-text">Game server tools</span>
+          </li>
+          <li>
+            <img class="bg-icon" src="assets/gear.png" alt="" aria-hidden="true">
+            <span class="item-text">Automation & utilities</span>
+          </li>
+          <li>
+            <img class="bg-icon" src="assets/ai.png" alt="" aria-hidden="true">
+            <span class="item-text">AI Development and understanding</span>
+          </li>
+          <li>
+            <img class="bg-icon" src="assets/websites.png" alt="" aria-hidden="true">
+            <span class="item-text">Clean, fast websites</span>
+          </li>
+          <li>
+            <img class="bg-icon" src="assets/squiral.png" alt="" aria-hidden="true">
+            <span class="item-text">Design systems & handoff</span>
+          </li>
+        </ul>
+      </article>
+
+      <!-- METRICS -->
+      <article class="card metrics metrics-small" aria-live="polite">
+        <div class="metric">
+          <div class="num" data-target="7">00</div>
+          <div class="lbl">Years</div>
+        </div>
+        <div class="metric">
+          <div class="num" data-target="5">00</div>
+          <div class="lbl">Clients</div>
+        </div>
+        <div class="metric">
+          <div class="num" id="projectsNumHome" data-target="0">00</div>
+          <div class="lbl">Projects</div>
+        </div>
+      </article>
+
+      <!-- PROJECTS SUMMARY (single grey label, 5px gap above tiles) -->
+      <article class="card proj-summary">
+        <p class="overline projects-label">PROJECTS</p>
+        <div class="ps-featured only five">
+          <!-- WinTils -->
+          <div class="tile">
+            <div class="tile-head">
+              <h4>WinTils</h4>
+              <span class="tag beta-min">Beta</span>
+            </div>
+            <p class="tile-desc">Windows optimization and QoL toolkit: safe cleanup, tweaks, and handy toggles.</p>
+            <a class="tile-btn go fixed-left" href="wintils/index.html">Go to →</a>
+          </div>
+          <!-- Coming soon tiles -->
+          <div class="tile disabled">
+            <div class="tile-head">
+              <h4>Project Slot</h4>
+              <span class="tag soon-min">Coming soon</span>
+            </div>
+            <p class="tile-desc">Reserved for next release.</p>
+            <button class="tile-btn fixed-left" disabled>Coming soon</button>
+          </div>
+          <div class="tile disabled">
+            <div class="tile-head">
+              <h4>Project Slot</h4>
+              <span class="tag soon-min">Coming soon</span>
+            </div>
+            <p class="tile-desc">Reserved for future project.</p>
+            <button class="tile-btn fixed-left" disabled>Coming soon</button>
+          </div>
+          <div class="tile disabled">
+            <div class="tile-head">
+              <h4>Project Slot</h4>
+              <span class="tag soon-min">Coming soon</span>
+            </div>
+            <p class="tile-desc">Reserved for future project.</p>
+            <button class="tile-btn fixed-left" disabled>Coming soon</button>
+          </div>
+          <div class="tile disabled">
+            <div class="tile-head">
+              <h4>Project Slot</h4>
+              <span class="tag soon-min">Coming soon</span>
+            </div>
+            <p class="tile-desc">Reserved for future project.</p>
+            <button class="tile-btn fixed-left" disabled>Coming soon</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-card hide-panel" aria-hidden="true">
+      <article class="card full">
+        <h2>About</h2>
+        <p>
+          I’m Tomi Taskov, a friendly coder from near Sofia who loves turning ideas into handy tools and scripts. I design and build clean websites, fast and advanced scripts, and I’m moving into desktop applications next. My focus is reliability, speed, and a smooth UX—across gaming utilities, automation, and AI development and understanding.
+        </p>
+        <p>Recent work includes a FiveM Anticheat, a YouTube downloader/sorter, and a Windows utility toolkit. Day to day, I mostly write in Python and Lua, with a healthy dose of HTML, CSS, and JavaScript to keep things interesting.</p>
+      </article>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="section hide-panel" aria-hidden="true">
+      <h2 class="section-title">Abandoned Work</h2>
+      <div class="works-grid">
+        <article class="card work">
+          <h3>FiveM Anticheat</h3>
+          <p>Lua‑based heuristics and pattern checks to protect FiveM servers.</p>
+        </article>
+        <article class="card work">
+          <h3>YouTube Downloader & Sorter</h3>
+          <p>CLI tool to download and auto‑organize content by channel, playlist, or date.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="gridx">KrexonTX</div>
+    <nav class="foot-nav">
+      <a href="#home" data-toggle="home">Home</a>
+      <a href="#about" data-toggle="about">About</a>
+      <a href="#works" data-toggle="works">Works</a>
+    </nav>
+    <p class="copy">© <span id="year"></span> Tomi Taskov</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
